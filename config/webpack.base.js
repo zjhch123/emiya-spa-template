@@ -5,7 +5,12 @@ const paths = require('./paths');
 module.exports = {
   context: paths.appSrc,
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@css': paths.appCSS,
+      '@js': paths.appJS,
+      '@assets': paths.appAssets,
+    }
   },
   entry: {
     index: paths.appIndexJS
