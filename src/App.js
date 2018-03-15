@@ -1,4 +1,4 @@
-import './css/base.css';
-import greeting from './js/index.js';
+import '@css/base.css';
+import greeting from '@js/index.js';
 
 greeting();
