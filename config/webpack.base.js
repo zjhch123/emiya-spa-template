@@ -42,7 +42,8 @@ module.exports = {
               limit: 8192,
               name: 'static/images/[name].[ext]'
             }
-          }
+          },
+          'image-webpack-loader'
         ]
       },
       {
