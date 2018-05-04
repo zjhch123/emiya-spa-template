@@ -17,7 +17,7 @@ module.exports = {
   },
   output: {
     path: paths.appBuildPath,
-    publicPath: '/',
+    publicPath: './',
     filename: 'static/js/[name]-[hash].js',
     chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js'
   },
@@ -42,8 +42,7 @@ module.exports = {
               limit: 8192,
               name: 'static/images/[name].[ext]'
             }
-          },
-          'image-webpack-loader'
+          }
         ]
       },
       {
