@@ -6,6 +6,10 @@ import greeting from '@js/index.js';
 if (process.env.NODE_ENV !== 'production') {
   require('./index.html')
 }
+// 开启模块热替换
+if (module.hot) {
+  module.hot.accept()
+}
 
 // 从这里开始写正式代码
 greeting();
