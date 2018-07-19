@@ -4,7 +4,8 @@
   ],
   "plugins": [
     "add-module-exports",
-    "transform-runtime"
+    "transform-runtime",
+    "transform-decorators-legacy"
   ],
   "comments": false
 }
