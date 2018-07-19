@@ -5,7 +5,8 @@
   "plugins": [
     "add-module-exports",
     "transform-runtime",
-    "transform-decorators-legacy"
+    "transform-decorators-legacy",
+    "transform-class-properties"
   ],
   "comments": false
 }
