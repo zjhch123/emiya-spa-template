@@ -1,3 +1,5 @@
-export default function() {
-  console.log('HelloWorld!');
+export default {
+  greeting: function() {
+    console.log('HelloWorld!');
+  }
 }
