@@ -5,6 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const address = require('address')
 
+config.mode = 'development'
+
 config.devServer = {
   historyApiFallback: true,
   overlay: true,

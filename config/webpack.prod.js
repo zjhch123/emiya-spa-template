@@ -1,32 +1,26 @@
 const webpack = require('webpack');
 const paths = require('./paths');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = require('./webpack.base.js');
 
+config.mode = 'production'
+
 config.module.rules.push({
-  test: /\.scss$/,
-  use: ExtractTextPlugin.extract({
-    use: [
-      'css-loader',
-      'postcss-loader',
-      'sass-loader'
-    ],
-    fallback: 'style-loader',
-    publicPath: '../../'
-  }),
-  exclude: /node_modules/
-},{
-  test: /\.css$/,
-  use: ExtractTextPlugin.extract({
-    use: [
-      'css-loader',
-      'postcss-loader'
-    ],
-    fallback: 'style-loader',
-    publicPath: '../../'
-  }),
+  test: /\.s?css$/,
+  use: [
+    {
+      loader: MiniCssExtractPlugin.loader,
+      options: {
+        publicPath: '../../',
+        fallback: 'style-loader'
+      }
+    },
+    'css-loader',
+    'postcss-loader',
+    'sass-loader',
+  ],
   exclude: /node_modules/
 });
 
@@ -39,10 +33,9 @@ config.plugins.push(
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
   }),
   new webpack.LoaderOptionsPlugin({minimize: true}),
-  new ExtractTextPlugin({
+  new MiniCssExtractPlugin({
     filename: 'static/css/[name]-[hash].css',
-    allChunks: true,
-    ignoreOrder: true
+    chunkFilename: 'static/css/[name]-[hash].css',
   }),
   new HtmlWebpackPlugin({
     inject: true,
