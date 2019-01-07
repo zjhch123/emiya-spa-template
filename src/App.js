@@ -7,9 +7,9 @@ if (process.env.NODE_ENV !== 'production') {
   require('./index.html')
 }
 // 如果需要的话可以开启模块热替换, 开启之后html页面不会自动刷新
-// if (module.hot) {
-//   module.hot.accept()
-// }
+if (module.hot) {
+  module.hot.accept()
+}
 
 // 从这里开始写正式代码
 greet.greeting();

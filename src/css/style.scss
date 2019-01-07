@@ -1,5 +1,5 @@
 html {
-  font-family: '微软雅黑';
+  font-family: "Heiti SC","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",verdana;
   .logo {
     background-image: url('../assets/images/logo.png');
     width: 253px;
@@ -9,5 +9,13 @@ html {
     background-size: 40% auto;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .container {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    p {
+      margin: 0 8px;
+    }
   }
 }
