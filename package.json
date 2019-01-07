@@ -5,8 +5,9 @@
   "main": "App.js",
   "scripts": {
     "build": "emiya-scripts build",
-    "dev": "emiya-scripts dev"
-  }, 
+    "dev": "emiya-scripts dev",
+    "eject": "emiya-scripts eject"
+  },
   "keywords": [
     "webpack",
     "emiya",
@@ -16,5 +17,7 @@
   "author": "zjhch123<416836508@qq.com>",
   "license": "MIT",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "emiya-scripts": "^1.0.2"
+  }
 }
