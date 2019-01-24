@@ -18,6 +18,6 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "emiya-scripts": "^1.0.3"
+    "emiya-scripts": "^1.1.0"
   }
 }
