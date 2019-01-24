@@ -14,8 +14,16 @@ html {
     text-align: center;
     width: 600px;
     margin: auto;
+    h2 {
+      font-size: 20px;
+      line-height: 1.41;
+    }
+    h4 {
+      font-size: 18px;
+    }
     p {
-      margin: 0 8px;
+      margin: 8px;
+      font-size: 16px;
     }
   }
 }
