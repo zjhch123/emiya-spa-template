@@ -1,29 +1,21 @@
-html {
-  font-family: "Heiti SC","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",verdana;
+@font-face {
+  font-family: "Mansalva";
+  src: url('../assets/fonts/Mansalva-Regular.ttf');
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  text-align: center;
   .logo {
-    background-image: url('../assets/images/logo.png');
+    background: url('../assets/images/logo.png') center / 50% no-repeat;
     width: 253px;
     height: 109px;
-    display: block;
-    margin: auto;
-    background-size: 40% auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: inline-block;
   }
-  .container {
-    text-align: center;
-    width: 600px;
-    margin: auto;
-    h2 {
-      font-size: 20px;
-      line-height: 1.41;
-    }
-    h4 {
-      font-size: 18px;
-    }
-    p {
-      margin: 8px;
-      font-size: 16px;
-    }
+  p {
+    font-size: 20px;
+    line-height: 1.1;
+    font-family: Mansalva;
   }
 }
