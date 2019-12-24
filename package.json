@@ -16,8 +16,8 @@
   ],
   "author": "",
   "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "emiya-scripts": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -6,7 +6,14 @@
     "paths": {
       "@css/*": ["./src/css/*"],
       "@js/*": ["./src/js/*"],
-      "@assets/*": ["./src/assets/*"],
-    }    
-  }
+      "@assets/*": ["./src/assets/*"]
+    },
+    "lib": [
+      "DOM",
+      "ESNext"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
