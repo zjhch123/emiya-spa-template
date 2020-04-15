@@ -2,19 +2,13 @@
   "name": "emiya_webapp",
   "version": "1.0.0",
   "description": "created by Emiya",
-  "main": "App.js",
+  "main": "./src/App.js",
   "scripts": {
     "build": "emiya-scripts build",
     "dev": "emiya-scripts dev",
     "eject": "emiya-scripts eject",
     "lint": "eslint -c .eslintrc.js ./src --ext .js --ignore-path .eslintignore"
   },
-  "keywords": [
-    "webpack",
-    "emiya",
-    "bootstrap",
-    "launcher"
-  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
