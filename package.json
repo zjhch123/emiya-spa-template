@@ -1,7 +1,7 @@
 {
-  "name": "emiya_webapp",
+  "name": "app",
   "version": "1.0.0",
-  "description": "created by Emiya",
+  "description": "Another new web app",
   "main": "./src/App.js",
   "scripts": {
     "build": "emiya-scripts build",
