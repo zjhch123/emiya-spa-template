@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "emiya-scripts": "^3.1.0"
+    "emiya-scripts": "^3.2.0"
   },
   "dependencies": {}
 }
